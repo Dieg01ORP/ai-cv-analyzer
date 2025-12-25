@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>SmartCV</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <h1>🧠 SmartCV</h1>
+    <p class="subtitle">Analizador inteligente de currículums con IA</p>
+
+    <!-- UPLOAD -->
+    <div class="upload-box">
+      <input type="file" id="file" accept=".pdf">
+      <button onclick="analyze()">Analizar CV</button>
+    </div>
+
+    <!-- RESULTADOS -->
+    <div id="result" class="hidden">
+
+      <!-- SCORE -->
+      <section class="section">
+        <h2>📊 Puntaje general</h2>
+        <div class="progress">
+          <div id="bar"></div>
+        </div>
+        <span id="score"></span>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="section cards">
+        <div class="card">
+          <h3>✅ Skills detectadas</h3>
+          <ul id="detected"></ul>
+        </div>
+
+        <div class="card">
+          <h3>❌ Skills faltantes</h3>
+          <ul id="missing"></ul>
+        </div>
+      </section>
+
+      <!-- RECOMENDACIONES -->
+      <section class="section">
+        <h2>💡 Recomendaciones</h2>
+        <ul id="tips" class="tips"></ul>
+      </section>
+
+      <!-- JOB MATCHES -->
+      <section class="section">
+        <h2>💼 Ofertas laborales recomendadas</h2>
+        <p class="hint">🏆 El mejor puesto aparece resaltado</p>
+        <div id="jobs"></div>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- SCRIPT AL FINAL (IMPORTANTE) -->
+  <script src="script.js"></script>
+</body>
+</html>

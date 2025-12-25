@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle at top, #151933, #0b0e1a);
+  color: #ffffff;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 950px;
+  margin: 50px auto;
+  padding: 35px;
+  background: #14172b;
+  border-radius: 16px;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.5);
+}
+
+/* TITLES */
+h1 {
+  text-align: center;
+  margin-bottom: 6px;
+  font-size: 36px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #9aa0ff;
+  margin-bottom: 35px;
+  font-size: 15px;
+}
+
+/* UPLOAD */
+.upload-box {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+input[type="file"] {
+  background: #1e223f;
+  border: 1px solid #2a2f5a;
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+button {
+  background: linear-gradient(135deg, #00ff88, #00c6ff);
+  border: none;
+  padding: 12px 26px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(0,255,200,0.35);
+}
+
+/* SECTIONS */
+.section {
+  margin-top: 35px;
+}
+
+.section h2 {
+  margin-bottom: 12px;
+}
+
+/* SCORE */
+.progress {
+  background: #24285a;
+  height: 18px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 12px 0;
+}
+
+#bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #00ff88, #00c6ff);
+  transition: width 0.8s ease;
+}
+
+#score {
+  font-weight: bold;
+  color: #00ffcc;
+}
+
+/* SKILLS */
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+.card {
+  background: #1c2044;
+  padding: 18px;
+  border-radius: 14px;
+  border: 1px solid #2b3070;
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+ul li {
+  margin-bottom: 6px;
+}
+
+/* RECOMMENDATIONS */
+.tips li {
+  background: #20255a;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  list-style: none;
+}
+
+/* JOB MATCHES */
+#jobs {
+  display: grid;
+  gap: 18px;
+}
+
+.job-card {
+  background: #1c2044;
+  padding: 18px;
+  border-radius: 14px;
+  border-left: 6px solid #00c6ff;
+  transition: transform 0.15s ease;
+}
+
+.job-card:hover {
+  transform: translateY(-2px);
+}
+
+.job-card.best {
+  border-left: 6px solid #00ff88;
+  box-shadow: 0 0 20px rgba(0,255,136,0.25);
+  background: linear-gradient(180deg, #1f2a2a, #18232a);
+}
+
+.job-title {
+  font-size: 19px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.job-progress {
+  background: #2a2f66;
+  height: 14px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.job-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #00ff88, #00c6ff);
+}
+
+.job-skills {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.job-skills span {
+  display: inline-block;
+  background: #2b3070;
+  padding: 4px 9px;
+  border-radius: 8px;
+  margin: 4px 4px 0 0;
+}
+
+.job-skills.missing span {
+  background: #402030;
+  color: #ff9aa2;
+}
+
+/* UTIL */
+.hidden {
+  display: none;
+}
+
+.hint {
+  font-size: 13px;
+  color: #9aa0ff;
+  margin-bottom: 10px;
+}
