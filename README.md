@@ -2,8 +2,6 @@
 
 SmartCV es una aplicación web que analiza currículums en formato PDF utilizando **Inteligencia Artificial (NLP)** para detectar habilidades técnicas, calcular un puntaje y ofrecer recomendaciones personalizadas para mejorar la empleabilidad del perfil.
 
-Este proyecto está orientado a **desarrolladores junior y estudiantes** que desean evaluar y fortalecer su CV técnico.
-
 ---
 
 ## 🚀 Características
@@ -33,7 +31,4 @@ Este proyecto está orientado a **desarrolladores junior y estudiantes** que des
 - CSS3
 - JavaScript (Fetch API)
 
----
-
-## 📂 Estructura del proyecto
 
